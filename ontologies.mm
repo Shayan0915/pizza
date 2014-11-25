@@ -1,6 +1,6 @@
 <map version="freeplane 1.3.0">
 <!--To view this file, download free mind mapping software Freeplane from http://freeplane.sourceforge.net -->
-<node TEXT="ontologies" ID="ID_1723255651" CREATED="1283093380553" MODIFIED="1416908260083"><hook NAME="MapStyle">
+<node TEXT="ontologies" ID="ID_1723255651" CREATED="1283093380553" MODIFIED="1416908362439"><hook NAME="MapStyle">
     <properties show_note_icons="true" show_icon_for_attributes="true"/>
 
 <map_styles>
@@ -129,7 +129,7 @@
 
 </richcontent>
 </node>
-<node TEXT="restrictions" ID="ID_1422222566" CREATED="1416907610953" MODIFIED="1416908195711"><richcontent TYPE="DETAILS">
+<node TEXT="restrictions" ID="ID_1422222566" CREATED="1416907610953" MODIFIED="1416908367996"><richcontent TYPE="DETAILS">
 
 <html>
   <head>
@@ -137,7 +137,7 @@
   </head>
   <body>
     <p>
-      A restriction describes an anonymous class (an unnamed class). The anonymous class contains all of the individuals that satisfy the restriction &#8211; i.e. all of the individuals that have the relationships required to be a member of the class.
+      A restriction describes an anonymous class (an unnamed class). The anonymous class contains all of the individuals that satisfy the restriction
     </p>
   </body>
 </html>
@@ -159,6 +159,24 @@
 
 </richcontent>
 <font BOLD="false"/>
+<node TEXT="by far the most common type of restrictions" ID="ID_1226729096" CREATED="1416908615117" MODIFIED="1416908627617"/>
+<node TEXT="eg. hasBase some PizzaBase" ID="ID_1903584881" CREATED="1416908649077" MODIFIED="1416908689415"><richcontent TYPE="DETAILS">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      describes all of the individuals that have at least one relationship along the hasBase property to an individual that is a member of the class PizzaBase &#8212; in more natural English, all of the individuals that have at least one pizza base.
+    </p>
+  </body>
+</html>
+
+</richcontent>
+</node>
+<node TEXT="also known as Some Restrictions, or as some values from restrictions." ID="ID_683302708" CREATED="1416908703445" MODIFIED="1416908710401"/>
+<node TEXT=" &#x2203; hasBase PizzaBase (DL Syntax (Description Logics Syntax))" ID="ID_252267120" CREATED="1416908738797" MODIFIED="1416908759418"/>
 </node>
 <node TEXT="universal (ONLY)" ID="ID_1960703579" CREATED="1416907638148" MODIFIED="1416908042101"><richcontent TYPE="DETAILS">
 
