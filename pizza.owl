@@ -97,9 +97,6 @@
         <Class IRI="#PrawnTopping"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#ProbeInconsistentTopping"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="#RedPepperTopping"/>
     </Declaration>
     <Declaration>
@@ -127,6 +124,9 @@
         <Class IRI="#VegetableTopping"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#VegetarianPizza"/>
+    </Declaration>
+    <Declaration>
         <ObjectProperty IRI="#hasBase"/>
     </Declaration>
     <Declaration>
@@ -152,6 +152,19 @@
                 <ObjectProperty IRI="#hasTopping"/>
                 <Class IRI="#CheeseTopping"/>
             </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#VegetarianPizza"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Pizza"/>
+            <ObjectAllValuesFrom>
+                <ObjectProperty IRI="#hasTopping"/>
+                <ObjectUnionOf>
+                    <Class IRI="#CheeseTopping"/>
+                    <Class IRI="#VegetableTopping"/>
+                </ObjectUnionOf>
+            </ObjectAllValuesFrom>
         </ObjectIntersectionOf>
     </EquivalentClasses>
     <SubClassOf>
@@ -187,6 +200,18 @@
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#AmericanaHotPizza"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#hasTopping"/>
+            <ObjectUnionOf>
+                <Class IRI="#JalapenoPepperTopping"/>
+                <Class IRI="#MozzarellaTopping"/>
+                <Class IRI="#PepperoniTopping"/>
+                <Class IRI="#TomatoTopping"/>
+            </ObjectUnionOf>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#AmericanaPizza"/>
         <Class IRI="#NamedPizza"/>
     </SubClassOf>
@@ -210,6 +235,17 @@
             <ObjectProperty IRI="#hasTopping"/>
             <Class IRI="#TomatoTopping"/>
         </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AmericanaPizza"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#hasTopping"/>
+            <ObjectUnionOf>
+                <Class IRI="#MozzarellaTopping"/>
+                <Class IRI="#PepperoniTopping"/>
+                <Class IRI="#TomatoTopping"/>
+            </ObjectUnionOf>
+        </ObjectAllValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#AnchovyTopping"/>
@@ -256,6 +292,16 @@
             <ObjectProperty IRI="#hasTopping"/>
             <Class IRI="#TomatoTopping"/>
         </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MargheritaPizza"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#hasTopping"/>
+            <ObjectUnionOf>
+                <Class IRI="#MozzarellaTopping"/>
+                <Class IRI="#TomatoTopping"/>
+            </ObjectUnionOf>
+        </ObjectAllValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#MeatTopping"/>
@@ -309,14 +355,6 @@
         <Class IRI="#SeafoodTopping"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#ProbeInconsistentTopping"/>
-        <Class IRI="#CheeseTopping"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#ProbeInconsistentTopping"/>
-        <Class IRI="#VegetableTopping"/>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="#RedPepperTopping"/>
         <Class IRI="#PepperTopping"/>
     </SubClassOf>
@@ -359,6 +397,18 @@
             <ObjectProperty IRI="#hasTopping"/>
             <Class IRI="#TomatoTopping"/>
         </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SohoPizza"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#hasTopping"/>
+            <ObjectUnionOf>
+                <Class IRI="#MozzarellaTopping"/>
+                <Class IRI="#OliveTopping"/>
+                <Class IRI="#ParmesanTopping"/>
+                <Class IRI="#TomatoTopping"/>
+            </ObjectUnionOf>
+        </ObjectAllValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#SpicyBeefTopping"/>
@@ -515,11 +565,6 @@
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#MargheritaPizza</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">A pizza that only has Mozarella and Tomato toppings</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#ProbeInconsistentTopping</IRI>
-        <Literal datatypeIRI="&rdf;PlainLiteral">This class should be inconsistent when the ontology is classified.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>

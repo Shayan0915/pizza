@@ -1,6 +1,6 @@
 <map version="freeplane 1.3.0">
 <!--To view this file, download free mind mapping software Freeplane from http://freeplane.sourceforge.net -->
-<node TEXT="ontologies" ID="ID_1723255651" CREATED="1283093380553" MODIFIED="1416908362439"><hook NAME="MapStyle">
+<node TEXT="ontologies" ID="ID_1723255651" CREATED="1283093380553" MODIFIED="1416922087746"><hook NAME="MapStyle" zoom="0.912">
     <properties show_note_icons="true" show_icon_for_attributes="true"/>
 
 <map_styles>
@@ -50,7 +50,7 @@
 </stylenode>
 </map_styles>
 </hook>
-<hook NAME="AutomaticEdgeColor" COUNTER="9"/>
+<hook NAME="AutomaticEdgeColor" COUNTER="10"/>
 <richcontent TYPE="DETAILS" HIDDEN="true">
 
 <html>
@@ -192,8 +192,31 @@
 </html>
 
 </richcontent>
+<node TEXT="Universal restrictions are also know as AllValuesFrom Restrictions." ID="ID_901760354" CREATED="1416921929632" MODIFIED="1416921934261"/>
+<node TEXT="Universal restrictions are given the symbol &#x2200;" ID="ID_822517089" CREATED="1416921846944" MODIFIED="1416921853716"/>
+<node TEXT="constrain the relationships along a given property to individuals that are members of a specific class" ID="ID_1608051776" CREATED="1416921855944" MODIFIED="1416921868797"/>
+<node TEXT="For a given property, universal restrictions do not specify the existence of a relationship. They merely state that if a relationship exists for the property then it must be to individuals that are members of a specific class." ID="ID_866461418" CREATED="1416921870207" MODIFIED="1416921982874"/>
 </node>
 </node>
+</node>
+<node TEXT="closure axiom" ID="ID_782088606" CREATED="1416924512656" MODIFIED="1416924971691"><richcontent TYPE="DETAILS">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      A closure axiom on a property consists of a universal restriction that acts along the property to say that it can only be filled by the specified fillers.
+    </p>
+    <p>
+      The restriction has a filler that is the union of the fillers that occur in the existential restrictions for the property
+    </p>
+  </body>
+</html>
+
+</richcontent>
+<node TEXT="" ID="ID_170679083" CREATED="1416924520385" MODIFIED="1416924520385"/>
 </node>
 </node>
 <node TEXT="reasoner" POSITION="right" ID="ID_901253558" CREATED="1416914591557" MODIFIED="1416914612870">
