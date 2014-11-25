@@ -115,7 +115,13 @@
         <ObjectProperty IRI="#hasTopping"/>
     </Declaration>
     <Declaration>
+        <ObjectProperty IRI="#isBaseOf"/>
+    </Declaration>
+    <Declaration>
         <ObjectProperty IRI="#isIngredientOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isToppingOf"/>
     </Declaration>
     <SubClassOf>
         <Class IRI="#AnchovyTopping"/>
@@ -264,9 +270,21 @@
         <ObjectProperty IRI="#hasTopping"/>
         <ObjectProperty IRI="#hasIngredient"/>
     </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isToppingOf"/>
+        <ObjectProperty IRI="#isBaseOf"/>
+    </SubObjectPropertyOf>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasBase"/>
+        <ObjectProperty IRI="#isBaseOf"/>
+    </InverseObjectProperties>
     <InverseObjectProperties>
         <ObjectProperty IRI="#isIngredientOf"/>
         <ObjectProperty IRI="#hasIngredient"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasTopping"/>
+        <ObjectProperty IRI="#isToppingOf"/>
     </InverseObjectProperties>
 </Ontology>
 
