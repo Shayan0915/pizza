@@ -40,6 +40,9 @@
         <Class IRI="#CheeseTopping"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#CheesyPizza"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#DeepPanBase"/>
     </Declaration>
     <Declaration>
@@ -141,6 +144,16 @@
     <Declaration>
         <ObjectProperty IRI="#isToppingOf"/>
     </Declaration>
+    <EquivalentClasses>
+        <Class IRI="#CheesyPizza"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Pizza"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasTopping"/>
+                <Class IRI="#CheeseTopping"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
     <SubClassOf>
         <Class IRI="#AmericanaHotPizza"/>
         <Class IRI="#NamedPizza"/>
