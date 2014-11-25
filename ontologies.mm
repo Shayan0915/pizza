@@ -216,7 +216,26 @@
 </html>
 
 </richcontent>
-<node TEXT="" ID="ID_170679083" CREATED="1416924520385" MODIFIED="1416924520385"/>
+</node>
+<node TEXT="Covering Axioms" ID="ID_979230233" CREATED="1416926143354" MODIFIED="1416926221541">
+<hook NAME="AlwaysUnfoldedNode"/>
+<richcontent TYPE="DETAILS">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      A covering axiom consists of two parts:
+    </p>
+    <p>
+      The class that is being &#8216;covered&#8217;, and the classes that form the covering. For example, suppose we have three classes A, B and C. Classes B and C are subclasses of class A. Now suppose that we have a covering axiom that specifies class A is covered by class B and also class C. This means that a member of class A must be a member of B and/or C. If classes B and C are disjoint then a member of class A must be a member of either class B or class C. Remember that ordinarily, although B and C are subclasses if A an individual may be a member of A without being a member of either B or C.
+    </p>
+  </body>
+</html>
+
+</richcontent>
 </node>
 </node>
 <node TEXT="reasoner" POSITION="right" ID="ID_901253558" CREATED="1416914591557" MODIFIED="1416914612870">

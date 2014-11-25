@@ -52,6 +52,9 @@
         <Class IRI="#HamTopping"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#Hot"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#JalapenoPepperTopping"/>
     </Declaration>
     <Declaration>
@@ -59,6 +62,12 @@
     </Declaration>
     <Declaration>
         <Class IRI="#MeatTopping"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Medium"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Mild"/>
     </Declaration>
     <Declaration>
         <Class IRI="#MozzarellaTopping"/>
@@ -109,6 +118,9 @@
         <Class IRI="#SohoPizza"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#SpicinessValuePartition"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#SpicyBeefTopping"/>
     </Declaration>
     <Declaration>
@@ -121,6 +133,9 @@
         <Class IRI="#TunaTopping"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#ValuePartition"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#VegetableTopping"/>
     </Declaration>
     <Declaration>
@@ -131,6 +146,9 @@
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#hasIngredient"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasSpiciness"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#hasTopping"/>
@@ -153,6 +171,14 @@
                 <Class IRI="#CheeseTopping"/>
             </ObjectSomeValuesFrom>
         </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#SpicinessValuePartition"/>
+        <ObjectUnionOf>
+            <Class IRI="#Hot"/>
+            <Class IRI="#Medium"/>
+            <Class IRI="#Mild"/>
+        </ObjectUnionOf>
     </EquivalentClasses>
     <EquivalentClasses>
         <Class IRI="#VegetarianPizza"/>
@@ -272,6 +298,10 @@
         <Class IRI="#MeatTopping"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#Hot"/>
+        <Class IRI="#SpicinessValuePartition"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#JalapenoPepperTopping"/>
         <Class IRI="#PepperTopping"/>
     </SubClassOf>
@@ -306,6 +336,14 @@
     <SubClassOf>
         <Class IRI="#MeatTopping"/>
         <Class IRI="#PizzaTopping"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Medium"/>
+        <Class IRI="#SpicinessValuePartition"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Mild"/>
+        <Class IRI="#SpicinessValuePartition"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#MozzarellaTopping"/>
@@ -411,6 +449,10 @@
         </ObjectAllValuesFrom>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#SpicinessValuePartition"/>
+        <Class IRI="#ValuePartition"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#SpicyBeefTopping"/>
         <Class IRI="#MeatTopping"/>
     </SubClassOf>
@@ -474,6 +516,11 @@
         <Class IRI="#SpicyBeefTopping"/>
     </DisjointClasses>
     <DisjointClasses>
+        <Class IRI="#Hot"/>
+        <Class IRI="#Medium"/>
+        <Class IRI="#Mild"/>
+    </DisjointClasses>
+    <DisjointClasses>
         <Class IRI="#MozzarellaTopping"/>
         <Class IRI="#ParmesanTopping"/>
     </DisjointClasses>
@@ -513,6 +560,9 @@
     <FunctionalObjectProperty>
         <ObjectProperty IRI="#hasBase"/>
     </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#hasSpiciness"/>
+    </FunctionalObjectProperty>
     <TransitiveObjectProperty>
         <ObjectProperty IRI="#hasIngredient"/>
     </TransitiveObjectProperty>
@@ -538,6 +588,10 @@
     <ObjectPropertyRange>
         <ObjectProperty IRI="#hasBase"/>
         <Class IRI="#PizzaBase"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasSpiciness"/>
+        <Class IRI="#SpicinessValuePartition"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#hasTopping"/>
