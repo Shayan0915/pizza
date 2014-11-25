@@ -50,7 +50,7 @@
 </stylenode>
 </map_styles>
 </hook>
-<hook NAME="AutomaticEdgeColor" COUNTER="7"/>
+<hook NAME="AutomaticEdgeColor" COUNTER="8"/>
 <richcontent TYPE="DETAILS" HIDDEN="true">
 
 <html>
@@ -195,6 +195,23 @@
 </node>
 </node>
 </node>
+</node>
+<node TEXT="reasoner" POSITION="right" ID="ID_901253558" CREATED="1416914591557" MODIFIED="1416914612870">
+<edge COLOR="#00007c"/>
+<richcontent TYPE="DETAILS">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      &#160;One of the main services offered by a reasoner is to test whether or not one class is a subclass of another class
+    </p>
+  </body>
+</html>
+
+</richcontent>
 </node>
 <node TEXT="classes (classes)" POSITION="right" ID="ID_1651873034" CREATED="1416907049949" MODIFIED="1416907135858">
 <edge COLOR="#00ff00"/>

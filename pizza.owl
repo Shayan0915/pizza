@@ -94,6 +94,9 @@
         <Class IRI="#PrawnTopping"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#ProbeInconsistentTopping"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#RedPepperTopping"/>
     </Declaration>
     <Declaration>
@@ -293,6 +296,14 @@
         <Class IRI="#SeafoodTopping"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#ProbeInconsistentTopping"/>
+        <Class IRI="#CheeseTopping"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ProbeInconsistentTopping"/>
+        <Class IRI="#VegetableTopping"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#RedPepperTopping"/>
         <Class IRI="#PepperTopping"/>
     </SubClassOf>
@@ -379,6 +390,9 @@
         <Class IRI="#CheeseTopping"/>
         <Class IRI="#MeatTopping"/>
         <Class IRI="#SeafoodTopping"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#CheeseTopping"/>
         <Class IRI="#VegetableTopping"/>
     </DisjointClasses>
     <DisjointClasses>
@@ -414,8 +428,12 @@
         <ObjectProperty IRI="#hasIngredient"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
-        <ObjectProperty IRI="#isToppingOf"/>
         <ObjectProperty IRI="#isBaseOf"/>
+        <ObjectProperty IRI="#isIngredientOf"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isToppingOf"/>
+        <ObjectProperty IRI="#isIngredientOf"/>
     </SubObjectPropertyOf>
     <InverseObjectProperties>
         <ObjectProperty IRI="#hasBase"/>
@@ -484,6 +502,11 @@
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#MargheritaPizza</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">A pizza that only has Mozarella and Tomato toppings</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#ProbeInconsistentTopping</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">This class should be inconsistent when the ontology is classified.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
