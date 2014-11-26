@@ -65,77 +65,6 @@
 </html>
 
 </richcontent>
-<node TEXT="reasoner" POSITION="right" ID="ID_901253558" CREATED="1416914591557" MODIFIED="1416914612870">
-<edge COLOR="#00007c"/>
-<richcontent TYPE="DETAILS">
-
-<html>
-  <head>
-    
-  </head>
-  <body>
-    <p>
-      &#160;One of the main services offered by a reasoner is to test whether or not one class is a subclass of another class
-    </p>
-  </body>
-</html>
-
-</richcontent>
-</node>
-<node TEXT="conditions" POSITION="left" ID="ID_1340707235" CREATED="1416915860070" MODIFIED="1416916227558">
-<edge COLOR="#007c00"/>
-<richcontent TYPE="DETAILS">
-
-<html>
-  <head>
-    
-  </head>
-  <body>
-    <p>
-      Necessary conditions are simply called Superclasses in Prot &#769;eg &#769;e 4. Necessary and
-    </p>
-    <p>
-      sufficient condition are called Equivalent classes.
-    </p>
-  </body>
-</html>
-
-</richcontent>
-<node TEXT="necessary conditions -&gt; Primitive Class" ID="ID_741698861" CREATED="1416915866190" MODIFIED="1416916004026"><richcontent TYPE="DETAILS">
-
-<html>
-  <head>
-    
-  </head>
-  <body>
-    <p>
-      can be read as, &#8220;If something is a member of this class then it is necessary to fulfil these conditions&#8221;
-    </p>
-    <p>
-      we cannot say that, &#8220;If something fulfils these conditions then it must be a member of this class&#8221;.
-    </p>
-  </body>
-</html>
-
-</richcontent>
-</node>
-<node TEXT="sufficient conditions -&gt; Defined Class" ID="ID_195661167" CREATED="1416915874326" MODIFIED="1416916200120"><richcontent TYPE="DETAILS">
-
-<html>
-  <head>
-    
-  </head>
-  <body>
-    <p>
-      sufficient to determine that any (random) individual that satisfies them must be a member of the class
-    </p>
-  </body>
-</html>
-
-</richcontent>
-<font BOLD="false"/>
-</node>
-</node>
 <node TEXT="components" POSITION="left" ID="ID_910282496" CREATED="1416998496500" MODIFIED="1416998529793">
 <edge COLOR="#7c7c00"/>
 <node TEXT="individuals (instances)" ID="ID_1328876778" CREATED="1416907036389" MODIFIED="1416998535332"/>
@@ -337,6 +266,24 @@
 </richcontent>
 </node>
 </node>
+<node TEXT="Qualified Cardinality Restrictions (QCR)" ID="ID_1454070792" CREATED="1417002208592" MODIFIED="1417002257266"><richcontent TYPE="DETAILS">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      more specific than cardinality restrictions in that they state the class of objects within the restriction.
+    </p>
+    <p>
+      An unqualified cardinality restriction is exactly the same as a qualified cardinality restriction with a filler of &quot;Thing&quot;.
+    </p>
+  </body>
+</html>
+
+</richcontent>
+</node>
 </node>
 <node TEXT="closure axiom" ID="ID_782088606" CREATED="1416924512656" MODIFIED="1416924971691"><richcontent TYPE="DETAILS">
 
@@ -378,6 +325,77 @@
 </node>
 </node>
 <node TEXT="classes (classes)" ID="ID_1651873034" CREATED="1416907049949" MODIFIED="1416998555649"/>
+</node>
+<node TEXT="conditions" POSITION="left" ID="ID_1340707235" CREATED="1416915860070" MODIFIED="1416916227558">
+<edge COLOR="#007c00"/>
+<richcontent TYPE="DETAILS">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      Necessary conditions are simply called Superclasses in Prot &#769;eg &#769;e 4. Necessary and
+    </p>
+    <p>
+      sufficient condition are called Equivalent classes.
+    </p>
+  </body>
+</html>
+
+</richcontent>
+<node TEXT="necessary conditions -&gt; Primitive Class" ID="ID_741698861" CREATED="1416915866190" MODIFIED="1416916004026"><richcontent TYPE="DETAILS">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      can be read as, &#8220;If something is a member of this class then it is necessary to fulfil these conditions&#8221;
+    </p>
+    <p>
+      we cannot say that, &#8220;If something fulfils these conditions then it must be a member of this class&#8221;.
+    </p>
+  </body>
+</html>
+
+</richcontent>
+</node>
+<node TEXT="sufficient conditions -&gt; Defined Class" ID="ID_195661167" CREATED="1416915874326" MODIFIED="1416916200120"><richcontent TYPE="DETAILS">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      sufficient to determine that any (random) individual that satisfies them must be a member of the class
+    </p>
+  </body>
+</html>
+
+</richcontent>
+<font BOLD="false"/>
+</node>
+</node>
+<node TEXT="reasoner" POSITION="right" ID="ID_901253558" CREATED="1416914591557" MODIFIED="1416914612870">
+<edge COLOR="#00007c"/>
+<richcontent TYPE="DETAILS">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      &#160;One of the main services offered by a reasoner is to test whether or not one class is a subclass of another class
+    </p>
+  </body>
+</html>
+
+</richcontent>
 </node>
 </node>
 </map>
