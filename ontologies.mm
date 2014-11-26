@@ -66,8 +66,35 @@
 </richcontent>
 <node TEXT="components" POSITION="left" ID="ID_910282496" CREATED="1416998496500" MODIFIED="1416998529793">
 <edge COLOR="#7c7c00"/>
-<node TEXT="individuals (instances)" ID="ID_1328876778" CREATED="1416907036389" MODIFIED="1416998535332"/>
-<node TEXT="properties (slots)" ID="ID_1984837398" CREATED="1416907044413" MODIFIED="1416998544084">
+<node TEXT="individuals (instances)" ID="ID_1328876778" CREATED="1416907036389" MODIFIED="1417005753854"><richcontent TYPE="DETAILS">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      represent objects in the domain in which we are interested
+    </p>
+  </body>
+</html>
+
+</richcontent>
+</node>
+<node TEXT="properties (slots)" ID="ID_1984837398" CREATED="1416907044413" MODIFIED="1417005731150"><richcontent TYPE="DETAILS">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      binary relations on individuals - i.e. properties link two individuals together
+    </p>
+  </body>
+</html>
+
+</richcontent>
 <node TEXT="object properties" ID="ID_1297162713" CREATED="1417002353041" MODIFIED="1417002407671"><richcontent TYPE="DETAILS">
 
 <html>
@@ -346,7 +373,42 @@
 <node TEXT="can also be of type functional" ID="ID_368347019" CREATED="1417005054338" MODIFIED="1417005064919"/>
 </node>
 </node>
-<node TEXT="classes (classes)" ID="ID_1651873034" CREATED="1416907049949" MODIFIED="1416998555649"/>
+<node TEXT="classes (classes)" ID="ID_1651873034" CREATED="1416907049949" MODIFIED="1417005835290"><richcontent TYPE="DETAILS">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      interpreted as sets that contain individuals
+    </p>
+    <p>
+      described using formal (mathematical) descriptions that state precisely the requirements for membership of the class
+    </p>
+    <p>
+      For example, the class Cat would contain all the individuals that are cats in our domain of interest. Classes may be organised into a superclass-subclass hierarchy, which is also known as a taxonomy. Subclasses specialise (&#8216;are subsumed by&#8217;) their superclasses. For example consider the classes Animal and Cat &#8211; Cat might be a subclass of Animal (so Animal is the superclass of Cat). This says that, &#8216;All cats are animals&#8217;, &#8216;All members of the class Cat are members of the class Animal&#8217;, &#8216;Being a Cat implies that you&#8217;re an Animal&#8217;, and &#8216;Cat is subsumed by Animal&#8217;.
+    </p>
+  </body>
+</html>
+
+</richcontent>
+<node TEXT="complement" ID="ID_509631654" CREATED="1417005848234" MODIFIED="1417005867766"><richcontent TYPE="DETAILS">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      A complement class contains all of the individuals that are not contained in the class that it is the complement to
+    </p>
+  </body>
+</html>
+
+</richcontent>
+</node>
+</node>
 </node>
 <node TEXT="conditions" POSITION="left" ID="ID_1340707235" CREATED="1416915860070" MODIFIED="1416916227558">
 <edge COLOR="#007c00"/>
@@ -414,6 +476,21 @@
   </body>
 </html>
 </richcontent>
+<node TEXT="open world reasoning (OWR)" ID="ID_64012492" CREATED="1417005514010" MODIFIED="1417005550072"><richcontent TYPE="DETAILS">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      &#160;means that we cannot assume something doesn&#8217;t exist until it is explicitly stated that it does not exist. In other words, because something hasn&#8217;t been stated to be true, it cannot be assumed to be false &#8212; it is assumed that &#8216;the knowledge just hasn&#8217;t been added to the knowledge base&#8217;.
+    </p>
+  </body>
+</html>
+
+</richcontent>
+</node>
 </node>
 </node>
 </map>

@@ -92,6 +92,9 @@
         <Class IRI="#NamedPizza"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#NonVegetarianPizza"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#OliveTopping"/>
     </Declaration>
     <Declaration>
@@ -147,6 +150,9 @@
     </Declaration>
     <Declaration>
         <Class IRI="#TunaTopping"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#UnclosedPizza"/>
     </Declaration>
     <Declaration>
         <Class IRI="#ValuePartition"/>
@@ -234,6 +240,15 @@
                     </FacetRestriction>
                 </DatatypeRestriction>
             </DataSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#NonVegetarianPizza"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Pizza"/>
+            <ObjectComplementOf>
+                <Class IRI="#VegetarianPizza"/>
+            </ObjectComplementOf>
         </ObjectIntersectionOf>
     </EquivalentClasses>
     <EquivalentClasses>
@@ -494,13 +509,6 @@
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#Pizza"/>
-        <DataSomeValuesFrom>
-            <DataProperty IRI="#hasCalorificContentValue"/>
-            <Datatype abbreviatedIRI="xsd:integer"/>
-        </DataSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="#PrawnTopping"/>
         <Class IRI="#SeafoodTopping"/>
     </SubClassOf>
@@ -588,6 +596,17 @@
         <Class IRI="#SeafoodTopping"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#UnclosedPizza"/>
+        <Class IRI="#NamedPizza"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#UnclosedPizza"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasTopping"/>
+            <Class IRI="#MozzarellaTopping"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#VegetableTopping"/>
         <Class IRI="#PizzaTopping"/>
     </SubClassOf>
@@ -642,6 +661,10 @@
     <DisjointClasses>
         <Class IRI="#MozzarellaTopping"/>
         <Class IRI="#ParmesanTopping"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#NonVegetarianPizza"/>
+        <Class IRI="#VegetarianPizza"/>
     </DisjointClasses>
     <DisjointClasses>
         <Class IRI="#Pizza"/>
