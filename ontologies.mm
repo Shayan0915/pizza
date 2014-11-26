@@ -50,7 +50,7 @@
 </stylenode>
 </map_styles>
 </hook>
-<hook NAME="AutomaticEdgeColor" COUNTER="10"/>
+<hook NAME="AutomaticEdgeColor" COUNTER="12"/>
 <richcontent TYPE="DETAILS" HIDDEN="true">
 
 <html>
@@ -65,15 +65,85 @@
 </html>
 
 </richcontent>
-<node TEXT="individuals (instances)" POSITION="right" ID="ID_1328876778" CREATED="1416907036389" MODIFIED="1416907123946">
-<edge COLOR="#ff0000"/>
+<node TEXT="reasoner" POSITION="right" ID="ID_901253558" CREATED="1416914591557" MODIFIED="1416914612870">
+<edge COLOR="#00007c"/>
+<richcontent TYPE="DETAILS">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      &#160;One of the main services offered by a reasoner is to test whether or not one class is a subclass of another class
+    </p>
+  </body>
+</html>
+
+</richcontent>
 </node>
-<node TEXT="properties (slots)" POSITION="right" ID="ID_1984837398" CREATED="1416907044413" MODIFIED="1416907130202">
-<edge COLOR="#0000ff"/>
+<node TEXT="conditions" POSITION="left" ID="ID_1340707235" CREATED="1416915860070" MODIFIED="1416916227558">
+<edge COLOR="#007c00"/>
+<richcontent TYPE="DETAILS">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      Necessary conditions are simply called Superclasses in Prot &#769;eg &#769;e 4. Necessary and
+    </p>
+    <p>
+      sufficient condition are called Equivalent classes.
+    </p>
+  </body>
+</html>
+
+</richcontent>
+<node TEXT="necessary conditions -&gt; Primitive Class" ID="ID_741698861" CREATED="1416915866190" MODIFIED="1416916004026"><richcontent TYPE="DETAILS">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      can be read as, &#8220;If something is a member of this class then it is necessary to fulfil these conditions&#8221;
+    </p>
+    <p>
+      we cannot say that, &#8220;If something fulfils these conditions then it must be a member of this class&#8221;.
+    </p>
+  </body>
+</html>
+
+</richcontent>
+</node>
+<node TEXT="sufficient conditions -&gt; Defined Class" ID="ID_195661167" CREATED="1416915874326" MODIFIED="1416916200120"><richcontent TYPE="DETAILS">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      sufficient to determine that any (random) individual that satisfies them must be a member of the class
+    </p>
+  </body>
+</html>
+
+</richcontent>
+<font BOLD="false"/>
+</node>
+</node>
+<node TEXT="components" POSITION="left" ID="ID_910282496" CREATED="1416998496500" MODIFIED="1416998529793">
+<edge COLOR="#7c7c00"/>
+<node TEXT="individuals (instances)" ID="ID_1328876778" CREATED="1416907036389" MODIFIED="1416998535332"/>
+<node TEXT="properties (slots)" ID="ID_1984837398" CREATED="1416907044413" MODIFIED="1416998544084">
 <node TEXT="types" ID="ID_1708865956" CREATED="1416907275244" MODIFIED="1416907281337">
-<node TEXT="functional" ID="ID_6897259" CREATED="1416907081093" MODIFIED="1416907090445">
+<node TEXT="functional" ID="ID_6897259" CREATED="1416907081093" MODIFIED="1416998626183">
 <node TEXT="eg mother" ID="ID_359940710" CREATED="1416907090451" MODIFIED="1416907097729"/>
-<node TEXT="apply to exactly one node, otherwise same" ID="ID_804966323" CREATED="1416907137948" MODIFIED="1416907171082"/>
+<node TEXT="apply to exactly one node, otherwise same" ID="ID_804966323" CREATED="1416907137948" MODIFIED="1416998626180"/>
 </node>
 <node TEXT="inverse functional" ID="ID_1158424459" CREATED="1416907178781" MODIFIED="1416907186210"/>
 <node TEXT="transitive" ID="ID_1267328077" CREATED="1416907186852" MODIFIED="1416907193321">
@@ -198,6 +268,75 @@
 <node TEXT="For a given property, universal restrictions do not specify the existence of a relationship. They merely state that if a relationship exists for the property then it must be to individuals that are members of a specific class." ID="ID_866461418" CREATED="1416921870207" MODIFIED="1416921982874"/>
 </node>
 </node>
+<node TEXT="Cardinality Restrictions" ID="ID_1484315732" CREATED="1416998250252" MODIFIED="1416998298838"><richcontent TYPE="DETAILS">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      restrictions that describe
+    </p>
+    <p>
+      * at least
+    </p>
+    <p>
+      * at most or
+    </p>
+    <p>
+      * exactly
+    </p>
+  </body>
+</html>
+
+</richcontent>
+<node TEXT="Minimum Cardinality Restriction" ID="ID_1493277510" CREATED="1416998307452" MODIFIED="1416998363188"><richcontent TYPE="DETAILS">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      For a given property P, a Minimum Cardinality Restriction specifies the minimum number of P relationships that an individual must participate in.
+    </p>
+  </body>
+</html>
+
+</richcontent>
+</node>
+<node TEXT="Maximum Cardinality Restriction" ID="ID_1135658301" CREATED="1416998313284" MODIFIED="1416998376453"><richcontent TYPE="DETAILS">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      A Maximum Cardinality Restriction specifies the maximum number of P relationships that an individual can participate in.
+    </p>
+  </body>
+</html>
+
+</richcontent>
+</node>
+<node TEXT="Cardinality Restriction" ID="ID_296448066" CREATED="1416998321468" MODIFIED="1416998389027"><richcontent TYPE="DETAILS">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      &#160;A Cardinality Restriction specifies the exact number of P relationships that an individual must participate in.
+    </p>
+  </body>
+</html>
+
+</richcontent>
+</node>
+</node>
 </node>
 <node TEXT="closure axiom" ID="ID_782088606" CREATED="1416924512656" MODIFIED="1416924971691"><richcontent TYPE="DETAILS">
 
@@ -238,79 +377,7 @@
 </richcontent>
 </node>
 </node>
-<node TEXT="reasoner" POSITION="right" ID="ID_901253558" CREATED="1416914591557" MODIFIED="1416914612870">
-<edge COLOR="#00007c"/>
-<richcontent TYPE="DETAILS">
-
-<html>
-  <head>
-    
-  </head>
-  <body>
-    <p>
-      &#160;One of the main services offered by a reasoner is to test whether or not one class is a subclass of another class
-    </p>
-  </body>
-</html>
-
-</richcontent>
-</node>
-<node TEXT="classes (classes)" POSITION="right" ID="ID_1651873034" CREATED="1416907049949" MODIFIED="1416907135858">
-<edge COLOR="#00ff00"/>
-</node>
-<node TEXT="conditions" POSITION="left" ID="ID_1340707235" CREATED="1416915860070" MODIFIED="1416916227558">
-<edge COLOR="#007c00"/>
-<richcontent TYPE="DETAILS">
-
-<html>
-  <head>
-    
-  </head>
-  <body>
-    <p>
-      Necessary conditions are simply called Superclasses in Prot &#769;eg &#769;e 4. Necessary and
-    </p>
-    <p>
-      sufficient condition are called Equivalent classes.
-    </p>
-  </body>
-</html>
-
-</richcontent>
-<node TEXT="necessary conditions -&gt; Primitive Class" ID="ID_741698861" CREATED="1416915866190" MODIFIED="1416916004026"><richcontent TYPE="DETAILS">
-
-<html>
-  <head>
-    
-  </head>
-  <body>
-    <p>
-      can be read as, &#8220;If something is a member of this class then it is necessary to fulfil these conditions&#8221;
-    </p>
-    <p>
-      we cannot say that, &#8220;If something fulfils these conditions then it must be a member of this class&#8221;.
-    </p>
-  </body>
-</html>
-
-</richcontent>
-</node>
-<node TEXT="sufficient conditions -&gt; Defined Class" ID="ID_195661167" CREATED="1416915874326" MODIFIED="1416916200120"><richcontent TYPE="DETAILS">
-
-<html>
-  <head>
-    
-  </head>
-  <body>
-    <p>
-      sufficient to determine that any (random) individual that satisfies them must be a member of the class
-    </p>
-  </body>
-</html>
-
-</richcontent>
-<font BOLD="false"/>
-</node>
+<node TEXT="classes (classes)" ID="ID_1651873034" CREATED="1416907049949" MODIFIED="1416998555649"/>
 </node>
 </node>
 </map>
