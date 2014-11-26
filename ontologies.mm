@@ -1,7 +1,7 @@
 <map version="freeplane 1.3.0">
 <!--To view this file, download free mind mapping software Freeplane from http://freeplane.sourceforge.net -->
 <node TEXT="ontologies" ID="ID_1723255651" CREATED="1283093380553" MODIFIED="1416922087746"><hook NAME="MapStyle" zoom="0.912">
-    <properties show_note_icons="true" show_icon_for_attributes="true"/>
+    <properties show_icon_for_attributes="true" show_note_icons="true"/>
 
 <map_styles>
 <stylenode LOCALIZED_TEXT="styles.root_node">
@@ -63,12 +63,24 @@
     </p>
   </body>
 </html>
-
 </richcontent>
 <node TEXT="components" POSITION="left" ID="ID_910282496" CREATED="1416998496500" MODIFIED="1416998529793">
 <edge COLOR="#7c7c00"/>
 <node TEXT="individuals (instances)" ID="ID_1328876778" CREATED="1416907036389" MODIFIED="1416998535332"/>
 <node TEXT="properties (slots)" ID="ID_1984837398" CREATED="1416907044413" MODIFIED="1416998544084">
+<node TEXT="object properties" ID="ID_1297162713" CREATED="1417002353041" MODIFIED="1417002407671"><richcontent TYPE="DETAILS">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      relationships between individuals
+    </p>
+  </body>
+</html>
+</richcontent>
 <node TEXT="types" ID="ID_1708865956" CREATED="1416907275244" MODIFIED="1416907281337">
 <node TEXT="functional" ID="ID_6897259" CREATED="1416907081093" MODIFIED="1416998626183">
 <node TEXT="eg mother" ID="ID_359940710" CREATED="1416907090451" MODIFIED="1416907097729"/>
@@ -125,7 +137,6 @@
     </p>
   </body>
 </html>
-
 </richcontent>
 </node>
 <node TEXT="restrictions" ID="ID_1422222566" CREATED="1416907610953" MODIFIED="1416908367996"><richcontent TYPE="DETAILS">
@@ -140,7 +151,6 @@
     </p>
   </body>
 </html>
-
 </richcontent>
 <node TEXT="quantifier restrictions" ID="ID_1624090510" CREATED="1416907620237" MODIFIED="1416907630010">
 <node TEXT="existential (SOME)" ID="ID_1502716451" CREATED="1416907631157" MODIFIED="1416908023217"><richcontent TYPE="DETAILS">
@@ -155,7 +165,6 @@
     </p>
   </body>
 </html>
-
 </richcontent>
 <font BOLD="false"/>
 <node TEXT="by far the most common type of restrictions" ID="ID_1226729096" CREATED="1416908615117" MODIFIED="1416908627617"/>
@@ -171,7 +180,6 @@
     </p>
   </body>
 </html>
-
 </richcontent>
 </node>
 <node TEXT="also known as Some Restrictions, or as some values from restrictions." ID="ID_683302708" CREATED="1416908703445" MODIFIED="1416908710401"/>
@@ -189,7 +197,6 @@
     </p>
   </body>
 </html>
-
 </richcontent>
 <node TEXT="Universal restrictions are also know as AllValuesFrom Restrictions." ID="ID_901760354" CREATED="1416921929632" MODIFIED="1416921934261"/>
 <node TEXT="Universal restrictions are given the symbol &#x2200;" ID="ID_822517089" CREATED="1416921846944" MODIFIED="1416921853716"/>
@@ -218,7 +225,6 @@
     </p>
   </body>
 </html>
-
 </richcontent>
 <node TEXT="Minimum Cardinality Restriction" ID="ID_1493277510" CREATED="1416998307452" MODIFIED="1416998363188"><richcontent TYPE="DETAILS">
 
@@ -232,7 +238,6 @@
     </p>
   </body>
 </html>
-
 </richcontent>
 </node>
 <node TEXT="Maximum Cardinality Restriction" ID="ID_1135658301" CREATED="1416998313284" MODIFIED="1416998376453"><richcontent TYPE="DETAILS">
@@ -247,7 +252,6 @@
     </p>
   </body>
 </html>
-
 </richcontent>
 </node>
 <node TEXT="Cardinality Restriction" ID="ID_296448066" CREATED="1416998321468" MODIFIED="1416998389027"><richcontent TYPE="DETAILS">
@@ -262,7 +266,6 @@
     </p>
   </body>
 </html>
-
 </richcontent>
 </node>
 </node>
@@ -281,7 +284,6 @@
     </p>
   </body>
 </html>
-
 </richcontent>
 </node>
 </node>
@@ -300,7 +302,6 @@
     </p>
   </body>
 </html>
-
 </richcontent>
 </node>
 <node TEXT="Covering Axioms" ID="ID_979230233" CREATED="1416926143354" MODIFIED="1416926221541">
@@ -320,8 +321,29 @@
     </p>
   </body>
 </html>
-
 </richcontent>
+</node>
+</node>
+<node TEXT="datatype properties" ID="ID_1384797937" CREATED="1417002361288" MODIFIED="1417002673610"><richcontent TYPE="DETAILS">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      * link an individual to an XML Schema Datatype value or an rdf literal
+    </p>
+    <p>
+      * they describe relationships between an individual and data values
+    </p>
+    <p>
+      * A datatype property can be used to relate an individual to a concrete data value that may be typed or untyped.
+    </p>
+  </body>
+</html>
+</richcontent>
+<node TEXT="can also be of type functional" ID="ID_368347019" CREATED="1417005054338" MODIFIED="1417005064919"/>
 </node>
 </node>
 <node TEXT="classes (classes)" ID="ID_1651873034" CREATED="1416907049949" MODIFIED="1416998555649"/>
@@ -343,7 +365,6 @@
     </p>
   </body>
 </html>
-
 </richcontent>
 <node TEXT="necessary conditions -&gt; Primitive Class" ID="ID_741698861" CREATED="1416915866190" MODIFIED="1416916004026"><richcontent TYPE="DETAILS">
 
@@ -360,7 +381,6 @@
     </p>
   </body>
 </html>
-
 </richcontent>
 </node>
 <node TEXT="sufficient conditions -&gt; Defined Class" ID="ID_195661167" CREATED="1416915874326" MODIFIED="1416916200120"><richcontent TYPE="DETAILS">
@@ -375,7 +395,6 @@
     </p>
   </body>
 </html>
-
 </richcontent>
 <font BOLD="false"/>
 </node>
@@ -394,7 +413,6 @@
     </p>
   </body>
 </html>
-
 </richcontent>
 </node>
 </node>
