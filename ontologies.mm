@@ -80,6 +80,40 @@
 </html>
 
 </richcontent>
+<node TEXT="OWL does not use the Unique Name Assumption (UNA).&#xa;Individuals cantherefore be asserted to be the &#x2018;Same As&#x2019; or &#x2018;Different From&#x2019; other individuals." ID="ID_61200489" CREATED="1417008686907" MODIFIED="1417008698936"/>
+<node TEXT="hasValue Restrictions" ID="ID_1415512836" CREATED="1417008410675" MODIFIED="1417008470120"><richcontent TYPE="DETAILS">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      * denoted by the symbol 3
+    </p>
+    <p>
+      * describes the set of individuals that have at least one relationship along a specified property to a specific individual.
+    </p>
+  </body>
+</html>
+
+</richcontent>
+<node TEXT="e.g. hasCountryOfOrigin 3 Italy" ID="ID_1523789771" CREATED="1417008509379" MODIFIED="1417008544663"><richcontent TYPE="DETAILS">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      describes the set of individuals (the anonymous class of individuals) that have at least one relationship along the hasCountryOfOrigin property to the specific individual Italy
+    </p>
+  </body>
+</html>
+
+</richcontent>
+</node>
+</node>
 </node>
 <node TEXT="properties (slots)" ID="ID_1984837398" CREATED="1416907044413" MODIFIED="1417005731150"><richcontent TYPE="DETAILS">
 
