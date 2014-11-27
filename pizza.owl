@@ -845,6 +845,21 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Country</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">&quot;A class that is equivalent to the set of individuals that are described in the enumeration - ie Countries can only be either America, England, France, Germany, or Italy and nothing else. Note that these individuals have been asserted to be allDifferent from each other.&quot;</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Country</IRI>
+        <Literal xml:lang="pt" datatypeIRI="&rdf;PlainLiteral">&quot;Pais&quot;</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Country</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">&quot;country&quot;</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#MargheritaPizza</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">A pizza that only has Mozarella and Tomato toppings</Literal>
     </AnnotationAssertion>

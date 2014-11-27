@@ -50,7 +50,7 @@
 </stylenode>
 </map_styles>
 </hook>
-<hook NAME="AutomaticEdgeColor" COUNTER="12"/>
+<hook NAME="AutomaticEdgeColor" COUNTER="1"/>
 <richcontent TYPE="DETAILS" HIDDEN="true">
 
 <html>
@@ -539,6 +539,161 @@
 </html>
 
 </richcontent>
+</node>
+</node>
+<node TEXT="annotations" POSITION="right" ID="ID_1706276636" CREATED="1417119002241" MODIFIED="1417119110172">
+<edge COLOR="#ff0000"/>
+<richcontent TYPE="DETAILS">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      OWL allows classes, properties, individuals and the ontology itself (technically speaking the ontology header) to be annotated with various pieces of information/meta-data.
+    </p>
+  </body>
+</html>
+
+</richcontent>
+<node TEXT="OWL-Full has no constraints" ID="ID_1467106669" CREATED="1417119008856" MODIFIED="1417119032173"/>
+<node TEXT="OWL-DL has constraints" ID="ID_1682562871" CREATED="1417119033224" MODIFIED="1417119045509">
+<node TEXT="The filler for annotation properties must either be a data literal, a URI reference or an individual." ID="ID_548261093" CREATED="1417119048520" MODIFIED="1417119065861"/>
+<node TEXT="Annotation properties cannot be used in property axioms &#x2014; for example they may not be used in the property hierarchy, so they cannot have sub properties, or be the sub property of another property. The also must not have a domain and a range set for them." ID="ID_1318128353" CREATED="1417119066784" MODIFIED="1417119084533"/>
+</node>
+<node TEXT="pre-defined annotation properties in OWL" ID="ID_508187857" CREATED="1417119126880" MODIFIED="1417119134085">
+<node TEXT="owl:versionInfo" ID="ID_334940822" CREATED="1417119134943" MODIFIED="1417119159605"><richcontent TYPE="DETAILS">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      in general the range of this property is a string
+    </p>
+  </body>
+</html>
+
+</richcontent>
+</node>
+<node TEXT="rdfs:label" ID="ID_1286721873" CREATED="1417119163296" MODIFIED="1417119221681"><richcontent TYPE="DETAILS">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      * has a range of a string
+    </p>
+    <p>
+      * may be used to add meaningful, human readable names to ontology elements
+    </p>
+    <p>
+      * can also be used to provide multi-lingual names for ontology elements
+    </p>
+  </body>
+</html>
+
+</richcontent>
+</node>
+<node TEXT="rdfs:comment" ID="ID_1152822864" CREATED="1417119223928" MODIFIED="1417119258010"><richcontent TYPE="DETAILS">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      has a range of a string
+    </p>
+  </body>
+</html>
+
+</richcontent>
+</node>
+<node TEXT="rdfs:seeAlso" ID="ID_1368629298" CREATED="1417119233352" MODIFIED="1417119267546"><richcontent TYPE="DETAILS">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      has a range of a URI which can be used to identify related resources
+    </p>
+  </body>
+</html>
+
+</richcontent>
+</node>
+<node TEXT="rdfs:isDefinedBy" ID="ID_1440075527" CREATED="1417119241528" MODIFIED="1417119286995"><richcontent TYPE="DETAILS">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      has a range of a URI reference which can be used to reference an ontology that defines ontology elements such as classes, properties and individuals
+    </p>
+  </body>
+</html>
+
+</richcontent>
+</node>
+<node TEXT="annotate an ontology" ID="ID_958015776" CREATED="1417119370231" MODIFIED="1417119378909">
+<node TEXT="owl:priorVersion" ID="ID_1056636457" CREATED="1417119379760" MODIFIED="1417119412170"><richcontent TYPE="DETAILS">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      identifies prior versions of the ontology
+    </p>
+  </body>
+</html>
+
+</richcontent>
+</node>
+<node TEXT="owl:backwardsCompatibleWith" ID="ID_643905719" CREATED="1417119389584" MODIFIED="1417119460883"><richcontent TYPE="DETAILS">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      * identifies a prior version of an ontology that the current ontology is compatible with
+    </p>
+    <p>
+      * means that all of the identifiers from the prior version have the same intended meaning in the current version -&gt; any ontologies or applications that reference the prior version can safely switch to referencing the new version
+    </p>
+  </body>
+</html>
+
+</richcontent>
+</node>
+<node TEXT="owl:incompatibleWith" ID="ID_1253453513" CREATED="1417119397712" MODIFIED="1417119472183"><richcontent TYPE="DETAILS">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      identifies a prior version of an ontology that the current ontology is not compatible with.
+    </p>
+  </body>
+</html>
+
+</richcontent>
+</node>
+</node>
 </node>
 </node>
 </node>
