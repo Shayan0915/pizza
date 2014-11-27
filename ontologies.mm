@@ -442,6 +442,21 @@
 
 </richcontent>
 </node>
+<node TEXT="enumerated classes" ID="ID_1169090843" CREATED="1417118887184" MODIFIED="1417118925821"><richcontent TYPE="DETAILS">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      As well as describing classes through named superclasses and anonymous superclasses such as restrictions, OWL allows classes to be defined by precisely listing the individuals that are the members of the class. For example, we might define a class DaysOfTheWeek to contain the individuals (and only the individuals) Sunday, Monday, Tuesday, Wednesday, Thursday, Friday and Saturday. Classes such as this are known as enumerated classes.
+    </p>
+  </body>
+</html>
+
+</richcontent>
+</node>
 </node>
 </node>
 <node TEXT="conditions" POSITION="left" ID="ID_1340707235" CREATED="1416915860070" MODIFIED="1416916227558">
